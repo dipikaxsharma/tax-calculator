@@ -1,4 +1,4 @@
-var tip;
+let tip;
 
 function updateInput() {
     let total = parseInt(document.querySelector('#total').value);
