@@ -8,6 +8,8 @@ function updateInput() {
 }
 
 function calculateRate() {
-    let total = parseInt(document.querySelector('#total').value);
-    document.getElementById("grandTotal").innerText = tip + total + 5.50;
+    if (tip) {
+        let total = parseInt(document.querySelector('#total').value);
+        document.getElementById("grandTotal").innerText = tip + total + 5.50;
+    }
 }
