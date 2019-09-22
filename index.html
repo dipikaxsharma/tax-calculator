@@ -35,7 +35,7 @@
                                 <label for="total" class="col-lg-3" style="margin-top: 5px;">Total</label>
                                 <span class="col-lg-8" style="padding-left: 0px;">
                                     <input type="number" class="form-control" id="total" placeholder="Enter bill amount"
-                                        required>
+                                        onchange="updateInput()" required>
                                 </span>
                             </div>
 
@@ -63,8 +63,8 @@
                                 <label for="grandTotal">Grand Total: $</label>
                                 <span id="grandTotal">0.00</span>
                             </div>
-                            <div style="text-align: center; color: blue">
-                                <button type="submit" class="btn btn-primary" onclick="calculateRate()">
+                            <div style="text-align: center;">
+                                <button class="btn btn-primary" onclick="calculateRate()">
                                     Calculate
                                 </button>
                             </div>
